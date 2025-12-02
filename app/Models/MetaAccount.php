@@ -1,0 +1,29 @@
+<?php
+// app/Models/MetaAccount.php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class MetaAccount extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'user_id',
+        'meta_user_id',
+        'long_lived_token',
+        'account_name',
+        'pixel_id',
+    ];
+
+    protected $hidden = [
+        'long_lived_token', // Não expor o token em dumps
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+}
