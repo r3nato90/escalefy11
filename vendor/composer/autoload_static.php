@@ -535,9 +535,23 @@ class ComposerStaticInitc514d8f7b9fc5970bdd94287905ef584
     );
 
     public static $classMap = array (
+        'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
+        'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\LxpayWebhookController' => __DIR__ . '/../..' . '/app/Http/Controllers/LxpayWebhookController.php',
+        'App\\Http\\Controllers\\MetaAuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/MetaAuthController.php',
+        'App\\Http\\Controllers\\SocialController' => __DIR__ . '/../..' . '/app/Http/Controllers/SocialController.php',
+        'App\\Http\\Controllers\\UtmRedirectController' => __DIR__ . '/../..' . '/app/Http/Controllers/UtmRedirectController.php',
+        'App\\Livewire\\Admin\\PlanManager' => __DIR__ . '/../..' . '/app/Livewire/Admin/PlanManager.php',
+        'App\\Livewire\\Admin\\SettingsForm' => __DIR__ . '/../..' . '/app/Livewire/Admin/SettingsForm.php',
+        'App\\Livewire\\UtmLinkManager' => __DIR__ . '/../..' . '/app/Livewire/UtmLinkManager.php',
+        'App\\Models\\MetaAccount' => __DIR__ . '/../..' . '/app/Models/MetaAccount.php',
+        'App\\Models\\Plan' => __DIR__ . '/../..' . '/app/Models/Plan.php',
+        'App\\Models\\Setting' => __DIR__ . '/../..' . '/app/Models/Setting.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Models\\UtmLink' => __DIR__ . '/../..' . '/app/Models/UtmLink.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
+        'App\\Services\\MetaAdsService' => __DIR__ . '/../..' . '/app/Services/MetaAdsService.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
         'Brick\\Math\\BigInteger' => __DIR__ . '/..' . '/brick/math/src/BigInteger.php',

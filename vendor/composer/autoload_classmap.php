@@ -6,9 +6,23 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
+    'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\LxpayWebhookController' => $baseDir . '/app/Http/Controllers/LxpayWebhookController.php',
+    'App\\Http\\Controllers\\MetaAuthController' => $baseDir . '/app/Http/Controllers/MetaAuthController.php',
+    'App\\Http\\Controllers\\SocialController' => $baseDir . '/app/Http/Controllers/SocialController.php',
+    'App\\Http\\Controllers\\UtmRedirectController' => $baseDir . '/app/Http/Controllers/UtmRedirectController.php',
+    'App\\Livewire\\Admin\\PlanManager' => $baseDir . '/app/Livewire/Admin/PlanManager.php',
+    'App\\Livewire\\Admin\\SettingsForm' => $baseDir . '/app/Livewire/Admin/SettingsForm.php',
+    'App\\Livewire\\UtmLinkManager' => $baseDir . '/app/Livewire/UtmLinkManager.php',
+    'App\\Models\\MetaAccount' => $baseDir . '/app/Models/MetaAccount.php',
+    'App\\Models\\Plan' => $baseDir . '/app/Models/Plan.php',
+    'App\\Models\\Setting' => $baseDir . '/app/Models/Setting.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
+    'App\\Models\\UtmLink' => $baseDir . '/app/Models/UtmLink.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
+    'App\\Services\\MetaAdsService' => $baseDir . '/app/Services/MetaAdsService.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Brick\\Math\\BigDecimal' => $vendorDir . '/brick/math/src/BigDecimal.php',
     'Brick\\Math\\BigInteger' => $vendorDir . '/brick/math/src/BigInteger.php',

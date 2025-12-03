@@ -1,5 +1,6 @@
 <?php
 // app/Models/UtmLink.php
+// Modelo para armazenar os links UTM gerados e as estatísticas de cliques.
 
 namespace App\Models;
 
@@ -13,14 +14,21 @@ class UtmLink extends Model
     protected $fillable = [
         'user_id',
         'short_code',
-        'full_url',
+        'full_url', // URL completa, incluindo todos os parâmetros UTM e dinâmicos
         'utm_source',
         'utm_medium',
         'utm_campaign',
-        'utm_content',
+        'utm_content', // Usado para armazenar o ID do anúncio (ex: {{ad.id}})
         'clicks',
     ];
 
+    protected $casts = [
+        'clicks' => 'integer',
+    ];
+
+    /**
+     * Relação: Um link UTM pertence a um Usuário.
+     */
     public function user()
     {
         return $this->belongsTo(User::class);
